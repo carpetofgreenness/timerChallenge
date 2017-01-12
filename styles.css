@@ -1,0 +1,128 @@
+.inner, .cover {
+	width: 500px;
+	margin: auto;
+}
+
+.nav,.masthead-nav, .masthead-brand, .cover {
+	background-color: rgba(0,0,0,.4);
+	border-radius: 5px;
+/*	margin-top: 15px;*/
+	-webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.4);
+  	    box-shadow: inset 0 0 50px rgba(0,0,0,.4);
+}
+
+@media (min-width: 768px) {
+  .masthead-nav {
+    float: left;
+  }
+}
+
+/*.nav, .masthead-nav {
+	padding: 15px;
+
+}*/
+
+.site-wrapper {
+  -webkit-box-shadow: inset 0 0 200px rgba(0,0,0,.6);
+          box-shadow: inset 0 0 200px rgba(0,0,0,.6);
+
+	background-image: url("blueprint-rectangle.jpg");
+	background-size: cover;
+
+}
+
+.cover-container {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cover {
+	padding: 25px;
+}
+
+.navbar-collapse {
+	border: none;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-size: 4rem;
+  font-family: 'Source Code Pro', monospace;
+/*  width: 80%;
+  margin: 0 auto;*/
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.active, .active > a {
+	background-color: rgb(0,157,214) !important;
+	color: white !important;
+	border-radius: 5px;
+}
+
+li > a {
+	color: white !important;
+}
+
+body {
+	width: 100%;
+}
+
+.body {
+	width: 50%;
+	animation-name: slide;
+	animation-duration: 3s;
+}
+
+.bodyResume {
+	width: 100%;
+	animation-name: slideBack;
+	animation-duration: 3s;	
+}
+
+#interruption {
+	background-color: rgb(0,157,214);
+	height: 100%;
+	position: absolute;
+	width: 50%;
+	margin-right: -50%;
+	display: table;
+}
+
+/*#closeIt {
+	float: top;
+}*/
+
+#content{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+@keyframes slide {
+
+   from {
+        width: 100%;
+    }
+
+  to {
+       width: 50%;
+  }
+}
+
+@keyframes slideBack {
+
+   from {
+        width: 50%;
+    }
+
+  to {
+       width: 100%;
+  }
+}
