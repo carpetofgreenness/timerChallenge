@@ -103,15 +103,42 @@ body {
 
 
 
-/*@media (max-width: 769px) {
+@media (max-width: 769px) {
 	#interruption {
-		background-color: black;
-		height: 50%;
+		height: 40%;
 		position: absolute;
+		left: 0;
+		bottom: 0;
 		width: 100%;
 		display: table;
 	}
-}*/
+	.appear {
+		animation-name: slideUpModal;
+		animation-duration: 3s;
+	}
+	.body{
+		height: 60%;
+		width: 100%;
+		animation-name: slideUp;
+		animation-duration: 3s;
+	}
+
+	.bodyResume {
+		height: 100%;
+		width: 100%;
+		animation-name: slideBackDown;
+		animation-duration: 3s;
+	}
+
+	.inner, .cover {
+		max-width: 80%;
+		margin: auto;
+	}
+	.startDisappearing {
+		animation-name: slideDownModal;
+		animation-duration: 3s;
+	}
+}
 
 #content{
 	display: table-cell;
@@ -137,5 +164,49 @@ body {
 
   to {
        width: 100%;
+  }
+}
+
+@keyframes slideUp {
+
+   from {
+        height: 100%;
+    }
+
+  to {
+       height: 60%;
+  }
+}
+
+@keyframes slideBackDown {
+
+   from {
+        height: 60%;
+    }
+
+  to {
+       height: 100%;
+  }
+}
+
+@keyframes slideUpModal {
+
+   from {
+        bottom: -40%;
+    }
+
+  to {
+       bottom: 0;
+  }
+}
+
+@keyframes slideDownModal {
+
+   from {
+        bottom: 0;
+    }
+
+  to {
+       bottom: -40%;
   }
 }

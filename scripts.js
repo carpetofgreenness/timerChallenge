@@ -5,7 +5,8 @@ setTimeout(function() {
 
 $("#closeIt").click(function() {
   $('.body').toggleClass('bodyResume');
+  $('.appear').toggleClass('startDisappearing');
 	setTimeout(function() {
-		$('.appear').toggleClass('disappear');
+		$('.startDisappearing').toggleClass('disappear');
 	}, 3000)
 });
